@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/layer5io/image-hub
+HostUrl=https://raw.githubusercontent.com/layer5io/image-hub/master/img/readme/service-mesh-architecture-consul.png

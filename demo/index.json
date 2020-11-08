@@ -1,0 +1,37 @@
+{
+  "title": "Meshery - The service mesh management plane",
+  "description": "Getting started with the Meshery UI",
+  "difficulty": "Beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Meshery - up and meshing!",
+        "text": "step1.md"
+      },
+      {
+        "title": "Set up and Build the UI",
+        "text": "step2.md"
+      },
+      {
+        "title": "Build the Meshery server",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "dashboards": [{"name": "Meshery Server", "href": "http://localhost:9081"},
+        {"name": "Port 9081", "port": 9081}],
+    "terminals": [{"name": "Meshery Server", "target": "host01", "port": 9081}]
+  },
+  "backend": {
+    "imageid": "ubuntu1804"
+  }
+}
