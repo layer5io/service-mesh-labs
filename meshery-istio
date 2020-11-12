@@ -1,0 +1,101 @@
+# Copyright 2019 Layer5 Authors
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+#!/usr/bin/env bash
+
+####### COMMON FUNCTIONS
+############################
+command_exists() {
+    command -v $1 >/dev/null 2>&1
+}
+
+#######   IDENTIFY OS
+############################
+
+OSARCHITECTURE="$(uname -m)"
+OS="$(uname)"
+
+if [ "x${OS}" = "xDarwin" ] ; then
+  OSEXT="Darwin"
+else
+  OSEXT="Linux"
+fi
+
+#######   PREFLIGHT CHECK
+############################
+
+if ! command_exists curl ; then
+    echo "Missing required utility: 'curl'. Please install 'curl' and try again."
+    exit;
+fi
+
+if [ "x${MESHERY_VERSION}" = "x" ] ; then
+  MESHERY_VERSION=$(curl -L -s https://api.github.com/repos/layer5io/meshery/releases | \
+                  grep tag_name | sed "s/ *\"tag_name\": *\"\\(.*\\)\",*/\\1/" | \
+                  grep -v "rc\.[0-9]$"| head -n 1 )
+fi
+
+if [ "x${MESHERY_VERSION}" = "x" ] ; then
+  printf "Unable to get latest mesheryctl version. Set MESHERY_VERSION env var and re-run. For example: export MESHERY_VERSION=v0.1.6"
+  exit;
+fi
+
+NAME="mesheryctl-${MESHERY_VERSION}"
+URL="https://github.com/layer5io/meshery/releases/download/${MESHERY_VERSION}/mesheryctl_${MESHERY_VERSION:1}_${OSEXT}_${OSARCHITECTURE}.zip"
+
+printf "\nDownloading %s for %s...\n\n" "$NAME" "$OSEXT"
+curl -L ${URL} -o ${PWD}/meshery.zip
+
+printf "\nExtracting %s...\n" "$NAME"
+unzip ${PWD}/meshery.zip 
+
+printf "\nInstalling mesheryctl in /usr/local/bin.\n"
+WHOAMI=$(whoami)
+if mv ${PWD}/mesheryctl /usr/local/bin/mesheryctl ; then		
+  echo "mesheryctl installed."
+else
+  if sudo mv ${PWD}/mesheryctl /usr/local/bin/mesheryctl ; then
+    echo "Permission Resolved: mesheryctl installed using sudo permissions."
+  else
+    echo "Cannot install mesheryctl. Check permissions of $WHOAMI for /usr/local/bin."
+    exit 1
+  fi
+fi
+
+#Transfering permissions and ownership to client USER
+if [ "$SUDO_USER" == "" ] ;
+then
+	if 	chown $WHOAMI /usr/local/bin/mesheryctl ; then
+    echo "permissions moved to "$WHOAMI
+  else
+  	echo "Unable to write to /usr/local/bin/mesheryctl. Please verify write permission for $WHOAMI."
+    exit 1
+  fi
+else
+	if chown $SUDO_USER /usr/local/bin/mesheryctl ; then
+    echo "permissions moved to "$SUDO_USER
+  else
+  	echo "Unable to write to /usr/local/bin/mesheryctl. Please verify write permission for $SUDO_USER."
+    exit 1
+  fi
+fi
+
+printf "Removing installation files and opening Meshery..."
+rm -rf meshery.zip LICENSE README.md
+
+curl -L https://raw.githubusercontent.com/layer5io/service-mesh-labs/master/meshery.yaml -o meshery.yaml
+
+cp meshery.yaml $HOME/.meshery/meshery.yaml
+
+mesheryctl system start
