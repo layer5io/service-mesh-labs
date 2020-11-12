@@ -1,0 +1,18 @@
+version: '3'
+services:
+  meshery:
+    image: layer5/meshery:stable-latest
+    environment:
+      - "SAAS_BASE_URL=https://meshery.layer5.io"
+      - "ADAPTER_URLS=meshery-istio:10000"
+      - "EVENT=mesheryLocal"
+    volumes:
+      - $HOME/.kube:/home/appuser/.kube:ro
+    ports:
+      - "9081:8080"
+  meshery-istio:
+    image: layer5/meshery-istio:stable-latest
+    ports:
+      - "10000:10000"
+volumes:
+  meshery-config:
