@@ -1,0 +1,33 @@
+{
+    "title": "Meshery - Learn how to manage your service mesh",
+    "description": "Learn how to run Meshery, install service meshes and deploy sample apps",
+    "icon": "fa-katacoda",
+    "courses": 
+    [
+      {
+        "course_id": "istio-meshery-adapter",
+        "title": "Working with Meshery and Istio",
+        "description": "Learn how to run Meshery, install Istio and deploy a sample app"
+      },
+      {
+        "course_id": "linkerd-meshery-adapter",
+        "title": "Working with Meshery and Linkerd",
+        "description": "Learn how to run Meshery, install Linkerd and deploy a sample app"
+      },
+      {
+        "course_id": "consul-meshery-adapter",
+        "title": "Working with Meshery and Consul",
+        "description": "Learn how to run Meshery, install Consul and deploy a sample app"
+      },
+      {
+        "course_id": "kuma-meshery-adapter",
+        "title": "Working with Meshery and Kuma",
+        "description": "Learn how to run Meshery, install Kuma and deploy a sample app"
+      },
+      {
+        "course_id": "nsm-meshery-adapter",
+        "title": "Working with Meshery and NSM",
+        "description": "Learn how to run Meshery, install NSM and deploy a sample app"
+      }
+    ]
+  }

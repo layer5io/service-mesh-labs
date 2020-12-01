@@ -1,0 +1,51 @@
+{
+  "title": "Working with Meshery and Consul",
+  "description": "Set up and run the Meshery adapter for Consul",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Let's get meshing!",
+        "text": "step1.md",
+        "courseData": "step1-background.sh",
+        "code": "step1-foreground.sh"
+      },
+      {
+        "title": "Deploy Consul",
+        "text": "step2.md"
+      },
+      {
+        "title": "Expose your cluster with Ingress",
+        "text": "step3.md"
+      },
+      {
+        "title": "Run a sample app",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+          {"file": "auth.json", "target": "/root", "chmod": "+x"},
+          {"file": "shell.sh", "target": "/root", "chmod": "+x"}
+      ]
+  }
+  },
+  "environment": {
+    "uieditorpath": "/root/example",
+    "hideHiddenFiles": true,
+    "exclusionPatterns": ["*test", "./test/*", "./logs"],
+    "showdashboard": true,
+    "dashboards": [{"name": "Meshery Server", "port": 9081},{"name": "ImageHub", "port": 8080}],
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "minikube-running"
+  }
+}
