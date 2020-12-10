@@ -13,17 +13,21 @@
         "code": "step1-foreground.sh"
       },
       {
-        "title": "Deploy Istio",
+        "title": "Install Istio",
         "text": "step2.md"
       },
       {
-        "title": "Run a sample app",
+        "title": "Install a Sample App",
         "text": "step3.md"
       },
       {
         "title": "Deploy Istio-Ingress Gateway",
-        "text": "step4.md",
-        "code": "step4-foreground.sh"
+        "text": "step4.md"
+      },
+      {
+        "title": "Access Sample App",
+        "text": "step5.md",
+        "code": "step5-foreground.sh"
       }
     ],
     "intro": {
@@ -36,7 +40,11 @@
     "assets": {
       "host01": [
           {"file": "auth.json", "target": "/root", "chmod": "+x"},
-          {"file": "shell.sh", "target": "/root", "chmod": "+x"}
+          {"file": "shell.sh", "target": "/root", "chmod": "+x"},
+          {"file": "ingress.sh", "target": "/root", "chmod": "+x"}
+      ],
+      "client01": [
+        {"file": "ingress.sh", "target": "/root", "chmod": "+x"}
       ]
   }
   },
@@ -45,7 +53,7 @@
     "hideHiddenFiles": true,
     "exclusionPatterns": ["*test", "./test/*", "./logs"],
     "showdashboard": true,
-    "dashboards": [{"name": "Meshery Server", "port": 9081}, {"name": "BookInfo", "port": 31380}],
+    "dashboards": [{"name": "Meshery Server", "port": 9081}],
     "uilayout": "terminal-iframe"
   }, 
 

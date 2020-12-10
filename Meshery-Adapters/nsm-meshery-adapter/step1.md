@@ -9,12 +9,14 @@ Meshery can be downloaded, installed, deployed and auto-launched with a single c
 
 `curl -L https://git.io/meshery | bash -`{{execute}}
 
-**Congratulations!**
-
-You have successfully installed Meshery.
+**Congratulations!** You have successfully installed Meshery.
 
 Meshery is auto launched at host:`9081`. 
-Go to the `Meshery Server` tab. For this tutorial, the server is configured to be listening at `http://localhost:9081`
+
+For this tutorial session, the **Meshery Server** tab is configured to be listening at `http://localhost:9081`/
+
+- Click on the **Meshery Server** tab
+- Click on **Display Port**
 
 **Welcome to Meshery!**
 
@@ -24,7 +26,7 @@ Choose **None** as your provider for now and get started.
 
 ## Connect your cluster with Meshery
 
-Meshery will auto-connect with your Minikube cluster by loading the kubeconfig found in your `$HOME/.kube` folder
+Meshery will auto-connect with your Minikube cluster by loading the kubeconfig found in your `$HOME/.kube` folder.
 
 **Check up on your connection**
 

@@ -1,6 +1,11 @@
 #!/bin/bash
+echo "Waiting for the environment to be set up"
 
-sleep 20s
+sleep 8s
+
+echo "Setting up a Minikube cluster"
+
+sleep 10s
 
 cd $HOME && minikube start 
 
@@ -12,7 +17,13 @@ else
     cd $HOME && minikube start
 fi
 
-sleep 3s
+ sleep 5s
+
+if [ ! -f $HOME/.kube/config ]; then
+    cd $HOME && minikube start 
+else
+    echo "Almost done..."
+fi
 
 cd $HOME/.kube && kubectl config view --minify --flatten > config.yaml && mv config.yaml config
 

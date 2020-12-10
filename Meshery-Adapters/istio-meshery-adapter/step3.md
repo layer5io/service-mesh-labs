@@ -6,13 +6,18 @@ _The Bookinfo sample application has no dependency on Istio and can be deployed 
 
 ![Bookinfo application](./assets/bookinfo-on-mesh.png)
 
-The application uses `sidecars proxy`, which can be either manually or automatically injected into the pods. Your kubernetes environment should support either, `v1`,`v1beta1` or the `v1beta2` APIs. You can confirm the API version by executing:
+The application uses `sidecars proxy`, which can be either manually or automatically injected into the pods. Your kubernetes environment should support either, `v1`,`v1beta1` or the `v1beta2` APIs. 
+
+_Note_ : You can confirm the API version by executing:
 `kubectl api-versions | grep admissionregistration`{{execute}}
 
-The default Istio installation uses automatic sidecar injection. Label the namespace that we are using to host the application:
-`kubectl label namespace default istio-injection=enabled --overwrite`{{execute}}
+1. The default Istio installation uses automatic sidecar injection. To host the application, we need to label the namespace that we are using:
 
-Get a NamespaceSelector, which decides whether to run the webhook on an object based on whether the namespace for that object matches a defined group of objects (`selector`)
+- Click on (+) under **Apply Service Mesh Configuration**
+- Choose **Automatic Sidecar Injection**
+
+2. Ensure that your namespace has been enabled with Istio-Injection:
+
 `kubectl get namespace -L istio-injection`{{execute}}
 
 The output should look like this:
@@ -26,8 +31,9 @@ The output should look like this:
 | kube-system         | Active |  6m |                 | 
 |kubernetes-dashboard | Active |  6m |                 |
 
-- Navigate to the **Istio Management** page on Meshery and enter `default` in the Namespace field.
-- Select the `Bookinfo application` in the `Sample Application` drop down menu.
+3. Navigate to the **Istio Management** page on Meshery and enter `default` in the Namespace field.
+
+4. Select the `Bookinfo application` in the `Sample Application` drop down menu.
 
 ![BookInfo sample app](./assets/istio-sample-app.png)
 

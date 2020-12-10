@@ -24,7 +24,7 @@ Upon successful deployment, the output should look like:
 To deploy the Emojivoto application, follow these steps:
  
  - Using Meshery, navigate to the Linkerd management page.
- - Enter `default` in the Namespace field. This is the namespace in which we will be defining and deploying the     Sample Application.
+ - Enter `default` in the Namespace field. This is the namespace in which we will be defining and deploying the Sample Application.
  - Click the (+) icon on the Sample Application card and select `Emojivoto Application` from the list.
 
  ![Emojivoto sample app](./assets/linkerd-sample-app.png)
