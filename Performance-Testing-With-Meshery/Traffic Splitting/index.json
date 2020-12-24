@@ -1,0 +1,51 @@
+{
+  "title": "Traffic Splitting with Meshery",
+  "description": "Traffic Management with Meshery",
+  "difficulty": "Beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Set up Meshery",
+        "text": "step1.md",
+        "courseData": "step1-background.sh",
+        "code": "step1-foreground.sh"
+      },
+      {
+        "title": "Deploy Sample apps",
+        "text": "step2.md"
+      },
+      {
+        "title": "Traffic Splitting",
+        "text": "step3.md"
+      },
+      {
+        "title": "Traffic Splitting with Istio",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+          {"file": "auth.json", "target": "/root", "chmod": "+x"},
+          {"file": "shell.sh", "target": "/root", "chmod": "+x"}
+      ]
+  }
+  },
+  "environment": {
+    "uieditorpath": "/root/example",
+    "hideHiddenFiles": false,
+    "exclusionPatterns": ["*test", "./test/*"],
+    "showdashboard": true,
+    "dashboards": [{"name": "Meshery Server", "port": 9081}],
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "minikube-running"
+  }
+}

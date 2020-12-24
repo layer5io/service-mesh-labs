@@ -1,0 +1,18 @@
+{
+  "title": "Meshery - Performance Testing",
+  "description": "Learn how to do Performance Testing with Meshery",
+  "icon": "fa-katacoda",
+  "courses": 
+  [
+    {
+      "course_id": "Running Performance Tests",
+      "title": "Running Performance tests",
+      "description": "Learn how to do performance testing with Meshery"
+    },
+    {
+      "course_id": "Traffic Splitting",
+      "title": "Traffic Splitting with Meshery",
+      "description": "Traffic Management with Meshery"
+    }
+  ]
+}
