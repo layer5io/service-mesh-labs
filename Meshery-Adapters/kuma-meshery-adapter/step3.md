@@ -4,16 +4,14 @@ Sample Applications are deployed on top of a service mesh to help you explore an
 
 [Image Hub](https://github.com/layer5io/image-hub) is a sample application created by the Layer5 community with the purpose of exploring Web Assemblies using WASM filters. Its features have now been expanded to allow Load Testing, Traffic Management etc.
 
-## Deploy Imagehub on Kuma
+## Deploy Image Hub on Kuma
 
 - Navigate to the **Kuma Management** page on Meshery with `default` in the Namespace field.
 - Select the `Image Hub application` in the `Sample Application` drop down menu.
 
-![Kuma Imagehub](./assets/consul-sample-app.png)
+![Kuma Imagehub](./assets/kuma-sample-app.png)
 
-You will be notified of successful deployment:
-
-![Kuma Imagehub](./assets/consul-imagehub-success.png)
+You will be notified of successful deployment.
 
 ## Expose your Sample Application
 
