@@ -7,9 +7,9 @@ After the environment has been setup, you may check up on your cluster nodes by 
 
 Meshery can be downloaded, installed, deployed and auto-launched with a single command:
 
-`curl -L https://git.io/meshery | PLATFORM=docker bash -`{{execute}}
+`curl -L https://git.io/meshery | ADAPTERS=consul DEPLOY_MESHERY=true PLATFORM=docker bash -`{{execute}}
 
-**Congratulations!** You have successfully installed Meshery.
+**Congratulations!** You have successfully installed Meshery with consul adapter.
 
 Meshery is auto launched at host:`9081`. 
 
