@@ -4,10 +4,10 @@ Meshery allows you to install any service mesh with a single click:
 
 ![Meshery adapter for Traefik-Mesh](./assets/traefik-mesh-adapter.png)
 
-## 2. In the Istio management page:
+## 2. In the Traefik Mesh management page:
 
 - Type `traefik-system` into the namespace field
-- Click the (+) icon on the Install card and select `Traefik Mesh` to install the latest version of Istio
+- Click the (+) icon on the Install card and select `Traefik Mesh` to install the latest version of Traefik Mesh
 
 ![Install Traefik-Mesh using Meshery](./assets/install-traefik.png)
 
