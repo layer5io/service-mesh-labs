@@ -1,21 +1,19 @@
 Sample Applications are deployed on top of a service mesh to help you explore and analyze your mesh's functionalities and features. They are also an excellent way to provide a consistent workload to run performance tests against.
 
-## ICMP Application
+## ImageHub
 
+[Image Hub](https://github.com/layer5io/image-hub) is a sample application created by the Layer5 community with the purpose of exploring Web Assemblies using WASM filters. Its features have now been expanded to allow Load Testing, Traffic Management etc.
 
+## Deploy Image Hub on Traefik Mesh
 
+- Navigate to the **Traefik Mesh Management** page on Meshery with `default` in the Namespace field.
+- Select the `Image Hub` in the `Sample Application` drop down menu.
 
-
-## Deploy ICMP Application on Kuma
-
-- Navigate to the **NSM Management** page on Meshery with `default` in the Namespace field.
-- Select the `ICMP` in the `Sample Application` drop down menu.
-
-![NSM Sample Apps](./assets/traefik-sample.png)
+![Traefik Mesh Sample Apps](./assets/traefik-sample.png)
 
 You will be notified of successful deployment:
 
-![Traefik Mesh emojivoto](./assets/emojivoto-installed.png)
+![Traefik Mesh Imagehub](./assets/image-hub.png)
 
 ### Expose your Sample Application
 
