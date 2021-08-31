@@ -1,6 +1,6 @@
 Meshery allows you to install any service mesh with a single click:
 
-## 1. Select `Traefik-mesh` from the Management menu
+## 1. Select `Traefik-Mesh` from the Management menu
 
 ![Meshery adapter for Traefik-Mesh](./assets/traefik-mesh-adapter.png)
 
@@ -13,7 +13,7 @@ Meshery allows you to install any service mesh with a single click:
 
 ## Check for successful installation
 
-NSM has been deployed in a separate Kubernetes namespace: nsm-system. To check if NSM is along with all the pieces that have been deployed, execute the following:
+Traefik Mesh has been deployed in a separate Kubernetes namespace: traefik-system. To check if Traefik Mesh is along with all the pieces that have been deployed, execute the following:
 
 `kubectl get all -n traefik-system`{{execute}}
 

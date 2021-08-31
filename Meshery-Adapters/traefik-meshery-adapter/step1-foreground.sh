@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/root/launch.sh
+/root/shell.sh
