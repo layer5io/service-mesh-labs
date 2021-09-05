@@ -1,9 +1,11 @@
 #!/bin/bash
 
-echo "Waiting for environment setup to complete..."
+/root/wait.sh
 
- sleep 6s
+# echo "Waiting for environment setup to complete..."
 
- echo "Verifying Kubernetes readiness..."
+#  sleep 6s
 
- sleep 6s
+#  echo "Verifying Kubernetes readiness..."
+
+#  sleep 6s
