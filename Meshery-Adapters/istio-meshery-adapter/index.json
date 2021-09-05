@@ -39,12 +39,10 @@
 
     "assets": {
       "host01": [
-          {"file": "auth.json", "target": "/root", "chmod": "+x"},
-          {"file": "shell.sh", "target": "/root", "chmod": "+x"},
-          {"file": "ingress.sh", "target": "/root", "chmod": "+x"}
+
       ],
       "client01": [
-        {"file": "ingress.sh", "target": "/root", "chmod": "+x"}
+
       ]
   }
   },
@@ -54,7 +52,7 @@
     "exclusionPatterns": ["*test", "./test/*", "./logs"],
     "showdashboard": true,
     "dashboards": [{"name": "Meshery Server", "port": 9081}],
-    "uilayout": "terminal-iframe"
+    "uilayout": "vscode-terminal-split"
   }, 
 
   "backend": {
