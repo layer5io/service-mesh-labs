@@ -8,7 +8,8 @@
       {
         
         "title": "Let's get meshing!",
-        "text": "step1.md"
+        "text": "step1.md",
+        "code": "launch.sh"
       },
       {
         "title": "Install Istio",
