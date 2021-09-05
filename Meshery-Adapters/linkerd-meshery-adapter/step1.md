@@ -6,9 +6,9 @@ This lab starts with an already running Kubernetes cluster. You may check up on 
 
 Meshery can be downloaded, installed, and launched with a single command:
 
-`curl -L https://git.io/meshery | ADAPTERS=istio PLATFORM=kubernetes bash -`{{execute}}
+`curl -L https://git.io/meshery | ADAPTERS=linkerd PLATFORM=kubernetes bash -`{{execute}}
 
-**Congratulations!** You have successfully installed Meshery and the Meshery Adapter for Istio.
+**Congratulations!** You have successfully installed Meshery and the Meshery Adapter for Linkerd.
 
 Meshery is now available at host:`9081`.
 
@@ -19,22 +19,22 @@ Find the **Meshery UI** tab is configured to be listening at `http://localhost:9
 
 **Welcome to Meshery!**
 
-Choose **None** as your provider for now and get started.
+Choose **Meshery** as your provider. Sign in to get started.
 
 ![Meshery landing page](./assets/meshery-none-provider.png)
 
 ## Connect your cluster with Meshery
 
-Meshery will auto-connect with your Minikube cluster by loading the kubeconfig found in your `$HOME/.kube` folder.
+Meshery will auto-connect with your Kubernetes by loading the kubeconfig found in your `$HOME/.kube` folder.
 
 **Check up on your connection**
 
-You may check up on the connections between Meshery and your server anytime by performing `ad hoc` tests to ensure a successful connections:
+Verify Meshery's connection to Kubernetes by clicking on the Kubernetes chip.
 
-1. Between Meshery and your cluster - Click on your `configuration name` (in this scenario, `minikube`)
+1. Between Meshery and Kubernetes
 
 ![Meshery connected with cluster](./assets/cluster-up.png)
 
-2. Between Meshery and your chosen adapter by clicking on the adapter name corresponding to the service mesh you have installed
+1. Between Meshery and the Meshery Adapter for your corresponding service mesh.
 
 ![Meshery connected with adapter](./assets/adapter-up.png)
