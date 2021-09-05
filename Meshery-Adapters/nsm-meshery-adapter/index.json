@@ -42,6 +42,6 @@
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "minikube"
+    "imageid": "kubernetes-cluster-running:1.18"
   }
 }
