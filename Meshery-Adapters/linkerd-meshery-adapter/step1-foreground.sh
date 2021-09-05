@@ -1,8 +1,9 @@
 #!/bin/bash
 
-echo off
+echo "Waiting for environment setup to complete..."
 
-echo "Kubernetes control plane is being initiatlized.
+ sleep 6s
 
+ echo "Verifying Kubernetes readiness..."
 
-This may take up to 10 seconds."
+ sleep 6s
