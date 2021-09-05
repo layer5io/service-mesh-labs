@@ -1,6 +1,6 @@
 {
   "title": "Working with Meshery and Istio",
-  "description": "Set up and run Meshery adapter",
+  "description": "Use the service mesh manager, Meshery, to operate Istio.",
   "difficulty": "Beginner",
   "time": "10 minutes",
   "details": {
@@ -52,7 +52,7 @@
     "exclusionPatterns": ["*test", "./test/*", "./logs"],
     "showdashboard": true,
     "dashboards": [{"name": "Meshery Server", "port": 9081}],
-    "uilayout": "vscode-terminal-split"
+    "uilayout": "terminal-iframe-split"
   }, 
 
   "backend": {
