@@ -37,6 +37,7 @@
     "dashboards": [{"name": "Meshery Server", "port": 9081},{"name": "Emojivoto", "port": 8080}],
     "uilayout": "terminal-iframe"
   },
+  
   "backend": {
     "imageid": "kubernetes-cluster-running:1.18"
   }
