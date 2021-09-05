@@ -20,7 +20,7 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "launch.sh"
+      "courseData": "launch.sh"
     },
     "finish": {
       "text": "finish.md"
