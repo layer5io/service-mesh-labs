@@ -8,7 +8,7 @@ Once ready, you can deploy Meshery.
 
 Meshery can be downloaded, installed, and launched with a single command:
 
-`curl -L https://git.io/meshery | ADAPTERS=linkerd PLATFORM=kubernetes bash -`{{execute}}
+`curl -L https://git.io/meshery | ADAPTERS=linkerd PLATFORM=docker bash -`{{execute}}
 
 **Congratulations!** You have successfully installed Meshery and the Meshery Adapter for Linkerd.
 
@@ -29,14 +29,9 @@ Choose **Meshery** as your provider. Sign in to get started.
 
 Meshery will auto-connect with your Kubernetes by loading the kubeconfig found in your `$HOME/.kube` folder.
 
-**Check up on your connection**
+**Verify your connections**
 
-Verify Meshery's connection to Kubernetes by clicking on the Kubernetes chip.
-
-1. Between Meshery and Kubernetes
+1. Between Meshery and Kubernetes.
+2. Between Meshery and the Meshery Adapter for your corresponding service mesh.
 
 ![Meshery connected with cluster](./assets/cluster-up.png)
-
-1. Between Meshery and the Meshery Adapter for your corresponding service mesh.
-
-![Meshery connected with adapter](./assets/adapter-up.png)
