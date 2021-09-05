@@ -1,6 +1,6 @@
 {
   "title": "Working with Meshery and Linkerd",
-  "description": "Meshing around with the Meshery adapter for Linkerd",
+  "description": "Use the service mesh manager, Meshery, to operate Linkerd.",
   "difficulty": "Beginner",
   "time": "10 minutes",
   "details": {
@@ -8,8 +8,7 @@
       {
         "title": "Let's get meshing!",
         "text": "step1.md",
-        "courseData": "step1-background.sh",
-        "code": "step1-foreground.sh"
+        "code": "launch.sh"
       },
       {
         "title": "Deploy Linkerd",
@@ -27,10 +26,6 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [
-          {"file": "auth.json", "target": "/root", "chmod": "+x"},
-          {"file": "shell.sh", "target": "/root", "chmod": "+x"}
-      ]
     }
   },
   "environment": {
@@ -38,10 +33,10 @@
     "hideHiddenFiles": true,
     "exclusionPatterns": ["*test", "./test/*", "./logs"],
     "showdashboard": true,
-    "dashboards": [{"name": "Meshery Server", "port": 9081},{"name": "Emojivoto", "port": 8080}],
+    "dashboards": [{"name": "Meshery UI", "port": 9081},{"name": "Emojivoto", "port": 8080}],
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "minikube"
+    "imageid": "kubernetes-cluster-running:1.18"
   }
 }
