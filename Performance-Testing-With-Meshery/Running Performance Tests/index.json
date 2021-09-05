@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Set up Meshery",
+        "title": "Initialize Kubernetes aand Meshery...",
         "text": "step1.md",
         "code": "step1-foreground.sh"
       },
