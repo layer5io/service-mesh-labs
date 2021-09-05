@@ -1,0 +1,63 @@
+{
+  "title": "Working with Meshery and Istio",
+  "description": "Set up and run Meshery adapter",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+      {
+        
+        "title": "Let's get meshing!",
+        "text": "step1.md",
+        "courseData": "step1-background.sh",
+        "code": "step1-foreground.sh"
+      },
+      {
+        "title": "Install Istio",
+        "text": "step2.md"
+      },
+      {
+        "title": "Install a Sample App",
+        "text": "step3.md"
+      },
+      {
+        "title": "Deploy Istio-Ingress Gateway",
+        "text": "step4.md"
+      },
+      {
+        "title": "Access Sample App",
+        "text": "step5.md",
+        "code": "step5-foreground.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+
+    "assets": {
+      "host01": [
+          {"file": "auth.json", "target": "/root", "chmod": "+x"},
+          {"file": "shell.sh", "target": "/root", "chmod": "+x"},
+          {"file": "ingress.sh", "target": "/root", "chmod": "+x"}
+      ],
+      "client01": [
+        {"file": "ingress.sh", "target": "/root", "chmod": "+x"}
+      ]
+  }
+  },
+  "environment": {
+    "uieditorpath": "/root/example",
+    "hideHiddenFiles": true,
+    "exclusionPatterns": ["*test", "./test/*", "./logs"],
+    "showdashboard": true,
+    "dashboards": [{"name": "Meshery Server", "port": 9081}],
+    "uilayout": "terminal-iframe"
+  }, 
+
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
+}
