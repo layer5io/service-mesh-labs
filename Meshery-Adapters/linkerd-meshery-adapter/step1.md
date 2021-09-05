@@ -14,6 +14,8 @@ Meshery can be downloaded, installed, and launched with a single command:
 
 Meshery is now available at host:`9081`.
 
+## Open Meshery UI
+
 Find the **Meshery UI** tab is configured to be listening at `http://localhost:9081`/
 
 - Click on the **Meshery UI** tab
