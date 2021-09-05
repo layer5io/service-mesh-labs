@@ -19,8 +19,7 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
-      "code": "launch.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
