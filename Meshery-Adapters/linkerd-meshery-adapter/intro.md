@@ -1,11 +1,11 @@
-[Meshery](https://meshery.io/) is the service mesh management plane which offers lifecycle, configuration, and performance management of service meshes and their workloads.
+[Meshery](https://meshery.io) is the service mesh manager, offering lifecycle, configuration, and performance management of service meshes and their workloads.
 
-This session aims to provide a walkthrough on how to configure, set up and run the Meshery adapter for Linkerd. Once Meshery is set up, it can be extended to:
+Using the Meshery Adapter for Linkerd, you will:
 
-- Support and manage the performance of your service mesh and its workloads 
+- Deploy Linkerd and a sample application.
 
-- Assess your service mesh against industry standards and the best operational practices
+- Verify your service mesh against operational best practices.
 
-- Validate your service mesh's conformance to the Service Mesh Interface(SMI) specification
+- Validate your service mesh's conformance to the Service Mesh Interface (SMI).
 
-- Estimate the overhead features of your service mesh with the Service Mesh Performance(SMP) standard.
+- Test the performance of your service mesh and its workload with the Service Mesh Performance (SMP) standard.
