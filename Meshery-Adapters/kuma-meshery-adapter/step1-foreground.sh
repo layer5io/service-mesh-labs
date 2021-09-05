@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Initializing Kubernetes control plane..."
+echo -e "Initializing Kubernetes control plane..."
 # while [ ! -e /root/shell.sh ];do
 #     sleep 1s
 # done
