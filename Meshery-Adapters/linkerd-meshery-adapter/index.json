@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Wait for Kubernetes to run...",
+        "title": "Initialize Kubernetes...",
         "text": "step1.md",
         "code": "step1-foreground.sh"
       },
