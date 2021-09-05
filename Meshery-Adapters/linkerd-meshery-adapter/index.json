@@ -1,6 +1,6 @@
 {
   "title": "Working with Meshery and Linkerd",
-  "description": "Use the service mesh manager, Meshery, to operate Linkerd.",
+  "description": "Meshing around with the Meshery adapter for Linkerd",
   "difficulty": "Beginner",
   "time": "10 minutes",
   "details": {
@@ -8,7 +8,8 @@
       {
         "title": "Let's get meshing!",
         "text": "step1.md",
-        "code": "launch.sh"
+        "courseData": "step1-background.sh",
+        "code": "step1-foreground.sh"
       },
       {
         "title": "Deploy Linkerd",
@@ -24,6 +25,9 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+
     }
   },
   "environment": {
@@ -35,6 +39,6 @@
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running:1.18"
+    "imageid": "minikube"
   }
 }
