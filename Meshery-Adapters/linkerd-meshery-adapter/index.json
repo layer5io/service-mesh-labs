@@ -8,7 +8,7 @@
       {
         "title": "Wait for Kubernetes to run...",
         "text": "step1.md",
-        "code": ["step1-background.sh", "step1-foreground.sh"]
+        "code": "step1-foreground.sh"
       },
       {
         "title": "Deploy Linkerd",
