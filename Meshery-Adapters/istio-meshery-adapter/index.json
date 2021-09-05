@@ -8,9 +8,7 @@
       {
         
         "title": "Let's get meshing!",
-        "text": "step1.md",
-        "courseData": "step1-background.sh"
-        // "code": "step1-foreground.sh"
+        "text": "step1.md"
       },
       {
         "title": "Install Istio",
