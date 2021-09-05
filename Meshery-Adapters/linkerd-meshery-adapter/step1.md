@@ -1,6 +1,8 @@
-This lab starts with an already running Kubernetes cluster. You may check up on your cluster nodes by executing:
+This lab starts by initializing a Kuberentes cluster, which may take a few moments to be available. You can check on your cluster availability by executing:
 
 `kubectl get nodes`{{execute}}
+
+Once ready, you can deploy Meshery.
 
 ## Setup Meshery
 
