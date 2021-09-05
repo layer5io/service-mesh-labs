@@ -53,7 +53,6 @@
     "dashboards": [{"name": "Meshery UI", "port": 9081}],
     "uilayout": "terminal-iframe-split"
   }, 
-
   "backend": {
     "imageid": "kubernetes-cluster-running:1.18",
     "port": 9081
