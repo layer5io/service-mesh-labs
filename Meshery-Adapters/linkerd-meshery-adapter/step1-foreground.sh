@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/assets/wait.sh
+/root/wait.sh
 
 # echo "Waiting for environment setup to complete..."
 
