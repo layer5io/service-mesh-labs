@@ -1,11 +1,1 @@
-#!/bin/bash
-
-wait.sh
-
-# echo "Waiting for environment setup to complete..."
-
-#  sleep 6s
-
-#  echo "Verifying Kubernetes readiness..."
-
-#  sleep 6s
+while [ ! -f /usr/local/bin/wait.sh ]; do sleep 1; done; /usr/local/bin/wait.sh
