@@ -1,4 +1,1 @@
-echo "Kubernetes control plane is being initiatlized.
-
-
-This may take up to 10 seconds."
+while [ ! -f /usr/local/bin/wait.sh ]; do sleep 1; done; /usr/local/bin/wait.sh
