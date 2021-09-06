@@ -1,14 +1,13 @@
 {
     "title": "Working with Meshery and Traefik Mesh",
-    "description": "Meshing around with the Meshery adapter for Traefik Mesh",
+    "description": "Meshing around with the Meshery Adapter for Traefik Mesh",
     "difficulty": "Beginner",
     "time": "10 minutes",
     "details": {
       "steps": [
         {
-          "title": "Let's get meshing!",
+          "title": "Initialize Kubernetes...",
           "text": "step1.md",
-          "courseData": "step1-background.sh",
           "code": "step1-foreground.sh"
         },
         {
@@ -28,7 +27,8 @@
       },
       "assets": {
         "host01": [
-            {"file": "auth.json", "target": "/root", "chmod": "+x"}
+          {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+          {"file": "shell.sh", "target": "/usr/local/bin/", "chmod": "+x"}
         ]
       }
     },
@@ -37,10 +37,11 @@
       "hideHiddenFiles": true,
       "exclusionPatterns": ["*test", "./test/*", "./logs"],
       "showdashboard": true,
-      "dashboards": [{"name": "Meshery Server", "port": 9081},{"name": "Imagehub", "port": 8080}],
+      "dashboards": [{"name": "Meshery Server", "port": 9081},{"name": "Image Hub", "port": 8080}],
       "uilayout": "terminal-iframe"
     },
+
     "backend": {
-      "imageid": "minikube"
+      "imageid": "kubernetes-cluster-running:1.18"
     }
   }
