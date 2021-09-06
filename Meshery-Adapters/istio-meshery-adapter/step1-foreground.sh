@@ -1,7 +1,3 @@
-#!/bin/bash
-
-echo off
-
 echo "Kubernetes control plane is being initiatlized.
 
 
