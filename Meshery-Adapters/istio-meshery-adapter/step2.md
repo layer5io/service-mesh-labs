@@ -7,7 +7,7 @@ Meshery allows you to install any service mesh with a single click:
 ## 2. In the Istio management page:
 
 - Type `istio-system` into the namespace field
-- Click the (+) icon on the Install card and select `Istio 1.7.3` to install the latest version of Istio
+- Click the (+) icon on the Install card to deploy the latest version of Istio.
 
 ![Install Istio using Meshery](./assets/install-istio.png)
 

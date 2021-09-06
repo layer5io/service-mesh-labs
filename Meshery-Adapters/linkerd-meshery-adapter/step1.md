@@ -1,42 +1,39 @@
-This session will auto-install **`minikube`** and set up other environment variables, necessary to run Meshery for you. This may take up to 2 minutes. 
+This lab starts by initializing a Kuberentes cluster, which may take a few moments to be available. You can check on your cluster availability by executing:
 
-After the environment has been setup, you may check up on your cluster nodes by running:
 `kubectl get nodes`{{execute}}
 
-## Set up Meshery
+Once ready, you can deploy Meshery.
 
-Meshery can be downloaded, installed, deployed and auto-launched with a single command:
+## Setup Meshery
 
-`curl -L https://git.io/meshery | PLATFORM=docker bash -`{{execute}}
+Meshery can be downloaded, installed, and launched with a single command:
 
-**Congratulations!** You have successfully installed Meshery.
+`curl -L https://git.io/meshery | ADAPTERS=linkerd PLATFORM=docker bash -`{{execute}}
 
-Meshery is auto launched at host:`9081`. 
+**Congratulations!** You have successfully installed Meshery and the Meshery Adapter for Linkerd.
 
-For this tutorial session, the **Meshery Server** tab is configured to be listening at `http://localhost:9081`/
+Meshery is now available at host:`9081`.
 
-- Click on the **Meshery Server** tab
+## Open Meshery UI
+
+Find the **Meshery UI** tab is configured to be listening at `http://localhost:9081`/
+
+- Click on the **Meshery UI** tab
 - Click on **Display Port**
 
 **Welcome to Meshery!**
 
-Choose **None** as your provider for now and get started.
+Choose **Meshery** as your provider. Sign in to get started.
 
 ![Meshery landing page](./assets/meshery-none-provider.png)
 
 ## Connect your cluster with Meshery
 
-Meshery will auto-connect with your Minikube cluster by loading the kubeconfig found in your `$HOME/.kube` folder.
+Meshery will auto-connect with your Kubernetes by loading the kubeconfig found in your `$HOME/.kube` folder.
 
-**Check up on your connection**
+**Verify your connections**
 
-You may check up on the connections between Meshery and your server anytime by performing `ad hoc` tests to ensure a successful connections:
-
-1. Between Meshery and your cluster - Click on your `configuration name` (in this scenario, `minikube`)
+1. Between Meshery and Kubernetes.
+2. Between Meshery and the Meshery Adapter for your corresponding service mesh.
 
 ![Meshery connected with cluster](./assets/cluster-up.png)
-
-2. Between Meshery and your chosen adapter by clicking on the adapter name corresponding to the service mesh you have installed
-
-![Meshery connected with adapter](./assets/adapter-up.png)
-

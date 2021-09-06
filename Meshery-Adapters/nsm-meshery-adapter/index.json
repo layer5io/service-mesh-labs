@@ -6,9 +6,8 @@
   "details": {
     "steps": [
       {
-        "title": "Let's get meshing!",
+        "title": "Initialize Kubernetes...",
         "text": "step1.md",
-        "courseData": "step1-background.sh",
         "code": "step1-foreground.sh"
       },
       {
@@ -42,6 +41,6 @@
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "minikube"
+    "imageid": "kubernetes-cluster-running:1.18"
   }
 }
