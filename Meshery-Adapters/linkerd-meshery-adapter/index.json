@@ -26,9 +26,9 @@
       "text": "finish.md"
     },
     "assets": {
-      "controlplane": [
-          {"file": "wait.sh", "target": "/root", "chmod": "+x"},
-          {"file": "shell.sh", "target": "/root", "chmod": "+x"}
+        "host01": [
+          {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+          {"file": "shell.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
