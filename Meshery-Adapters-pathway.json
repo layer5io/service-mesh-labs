@@ -28,6 +28,11 @@
         "course_id": "nsm-meshery-adapter",
         "title": "Working with Meshery and NSM",
         "description": "Learn how to run Meshery, install NSM and deploy a sample app"
+      },
+      {
+        "course_id": "traefik-mesh-adapter",
+        "title": "Working with Meshery and Traefik Mesh",
+        "description":"Learn how to run Meshery, install Traefik mesh and deploy a sample app"
       }
     ]
   }
