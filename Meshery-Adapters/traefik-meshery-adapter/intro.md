@@ -1,8 +1,8 @@
 [Meshery](https://meshery.io) is the service mesh manager, offering lifecycle, configuration, and performance management of service meshes and their workloads.
 
-Using the Meshery Adapter for Linkerd, you will:
+Using the Meshery Adapter for Traefik Mesh, you will:
 
-- Deploy Linkerd and a sample application.
+- Deploy Traefik Mesh and a sample application.
 
 - Verify your service mesh against operational best practices.
 
