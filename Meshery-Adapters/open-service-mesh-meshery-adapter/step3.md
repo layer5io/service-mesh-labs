@@ -4,12 +4,12 @@ Sample Applications are deployed on top of a service mesh to help you explore an
 
 [Image Hub](https://github.com/layer5io/image-hub) is a sample application created by the Layer5 community with the purpose of exploring Web Assemblies using WASM filters. Its features have now been expanded to allow Load Testing, Traffic Management etc.
 
-## Deploy Image Hub on Traefik Mesh
+## Deploy Image Hub on Open Service Mesh
 
-- Navigate to the **Traefik Mesh Management** page on Meshery with `default` in the Namespace field.
+- Navigate to the **Open Service Mesh Management** page on Meshery with `default` in the Namespace field.
 - Select the `Image Hub` in the `Sample Application` drop down menu.
 
-![Traefik Mesh Sample Apps](./assets/traefik-sample.png)
+![Traefik Mesh Sample Apps](./assets/osm-sample.png)
 
 You will be notified of successful deployment:
 
@@ -17,11 +17,11 @@ You will be notified of successful deployment:
 
 ### Expose your Sample Application
 
-A sidecar injector is used for automating the injection of the Linkerd proxy into your application's pod spec. The Kubernetes admission controller enforces this behavior by sending a webhook request to the sidecar injector every time a pod is to be scheduled.
+A sidecar injector is used for automating the injection of the Open Service Mesh proxy into your application's pod spec. The Kubernetes admission controller enforces this behavior by sending a webhook request to the sidecar injector every time a pod is to be scheduled.
 
-You have already deployed the sidecar proxy injector when you installed Traefik Mesh, which should be running in your control plane. To verify, execute this command:
+You have already deployed the sidecar proxy injector when you installed Open Service Mesh, which should be running in your control plane. To verify, execute this command:
 
-`kubectl get deployment consul-consul-connect-injector-webhook-deployment -n consul-system`{{execute}}
+`kubectl annotate osm-system <osm-system> openservicemesh.io/sidecar-injection=enabled`{{execute}}
 
 **Let's verify that your deployment works. Run**:
 (The *Available* column might take upto a minute to get updated)
