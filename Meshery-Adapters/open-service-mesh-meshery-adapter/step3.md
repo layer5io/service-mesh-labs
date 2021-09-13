@@ -9,11 +9,11 @@ Sample Applications are deployed on top of a service mesh to help you explore an
 - Navigate to the **Open Service Mesh Management** page on Meshery with `default` in the Namespace field.
 - Select the `Image Hub` in the `Sample Application` drop down menu.
 
-![Traefik Mesh Sample Apps](./assets/osm-sample.png)
+![Open Service Mesh Sample Apps](./assets/osm-sample.png)
 
 You will be notified of successful deployment:
 
-![Traefik Mesh Imagehub](./assets/image-hub.png)
+![Open Service Mesh Imagehub](./assets/image-hub.png)
 
 ### Expose your Sample Application
 
