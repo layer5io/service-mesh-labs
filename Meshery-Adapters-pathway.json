@@ -35,7 +35,7 @@
         "description": "Learn how to run Meshery, install Traefik mesh and deploy a sample app"
       },
       {
-        "course_id": "open-service-mesh-meshery-adapter",
+        "course_id": "osm-meshery-adapter",
         "title": "Working with Meshery and Open Service Mesh",
         "description": "Learn how to run Meshery, install Open Service Mesh and deploy a sample app"
       }
