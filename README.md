@@ -1,7 +1,5 @@
 # Service Mesh Labs
-Lab scenarios for learning how to service mesh - https://layer5.io/learn/service-mesh-labs
-
-<div>&nbsp;</div>
+Learn how to service mesh with interactive labs - [ServiceMeshLabs](https://layer5.io/learn/service-mesh-labs)
 
 ## Join the service mesh community!
 
