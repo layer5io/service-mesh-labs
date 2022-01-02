@@ -25,7 +25,7 @@ Find the **Meshery UI** tab is configured to be listening at `http://localhost:9
 
 Choose **Meshery** as your provider. Sign in to get started.
 
-![Meshery landing page](./assets/meshery-none-provider.png)
+![Meshery landing page](./assets/starting-page.png)
 
 ## Connect your cluster with Meshery
 
@@ -36,4 +36,4 @@ Meshery will auto-connect with your Kubernetes by loading the kubeconfig found i
 1. Between Meshery and Kubernetes.
 2. Between Meshery and the Meshery Adapter for your corresponding service mesh.
 
-![Meshery connected with cluster](./assets/cluster-up.png)
+![Meshery connected with cluster](./assets/linkerd-connected.png)

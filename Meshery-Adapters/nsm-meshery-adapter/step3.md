@@ -8,20 +8,20 @@ Sample Applications are deployed on top of a service mesh to help you explore an
 
 ## Deploy ICMP Application on Kuma
 
-- Navigate to the **NSM Management** page on Meshery with `default` in the Namespace field.
-- Select the `ICMP` in the `Sample Application` drop down menu.
+- Navigate to the **NSM Management** page from the Lifecycle Menu on Meshery and select `default` in the Namespace field.
+- Select the `ICMP Responded` in the Manage Sample Application Lifecycle drop down menu.
 
 ![NSM Sample Apps](./assets/nsm-sample-app.png)
 
 You will be notified of successful deployment:
 
-![NSM ICMP](./assets/icmp-deployed.png)
+![NSM ICMP](./assets/icmp-instaled.png)
 
 ## Expose your Sample Application
 
 A sidecar injector is used for automating the injection of the NSM proxy into your application's pod spec. The Kubernetes admission controller enforces this behavior by sending a webhook request to the sidecar injector every time a pod is to be scheduled.
 
-You have already deployed the sidecar proxy injector when you installedsz Consul, which should be running in your control plane. To verify, execute this command:
+You have already deployed the sidecar proxy injector when you installed NSM, which should be running in your control plane. To verify, execute this command:
 
 `kubectl get deployment nsm-admission-webhook -n nsm-system`{{execute}}
 
@@ -59,4 +59,4 @@ If you cannot see the *Ready* column updated, this is because the deployment can
 
     `kubectl port-forward svc/nsm-admission-webhook 8080 --address 0.0.0.0 -n default`{{Execute}}
 
-The Image Hub application should now be deployed on the HTTP port: `8080`. Make your way to the `ImageHub` Server tab. For this tutorial, the server is configured to be listening at `http://localhost:8080`
+The ICMP application should now be deployed on the HTTP port: `8080`. Make your way to the `ImageHub` Server tab. For this tutorial, the server is configured to be listening at `http://localhost:8080`
