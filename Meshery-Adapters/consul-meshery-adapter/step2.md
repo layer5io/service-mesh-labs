@@ -1,6 +1,6 @@
-Consul can be manually installed on your Kubernetes cluster as well. Meshery offers a simple alternative way to do so. 
+Consul can be manually installed on your Kubernetes cluster as well. Meshery offers a simple alternative way to do so.
 
-## 1. Select `Consul` from the Management menu
+## 1. Select `Consul` from the Lifecycle menu
 
 ![Meshery adapter for Consul](./assets/consul-adapter.png)
 
