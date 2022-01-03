@@ -1,10 +1,10 @@
 Meshery allows you to install any service mesh with a single click:
 
-## 1. Select `Istio` from the Performance menu
+## 1. Select `Istio` from the Lifecycle menu
 
 ![Meshery adapter for Istio](./assets/istio-adapter.png)
 
-## 2. In the Istio Performance page:
+## 2. In the Istio Lifecycle page:
 
 - Type `istio-system` into the namespace field
 - Click the (+) icon on the Install card to deploy the latest version of Istio.
