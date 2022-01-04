@@ -6,8 +6,8 @@ Sample Applications are deployed on top of a service mesh to help you explore an
 
 ## Deploy Image Hub on Open Service Mesh
 
-- Navigate to the **Open Service Mesh Management** page on Meshery with `default` in the Namespace field.
-- Select the `Image Hub` in the `Sample Application` drop down menu.
+- Navigate to the **Open Service Mesh Management** page on Meshery under `Lifecycle` menu with `default` in the Namespace field.
+- Select the `Image Hub Application` in the `Manage Sample Application Lifecyle` drop down menu.
 
 ![Open Service Mesh Sample Apps](./assets/osm-sample.png)
 

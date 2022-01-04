@@ -6,8 +6,8 @@ Sample Applications are deployed on top of a service mesh to help you explore an
 
 ## Deploy Image Hub on Traefik Mesh
 
-- Navigate to the **Traefik Mesh Management** page on Meshery with `default` in the Namespace field.
-- Select the `Image Hub` in the `Sample Application` drop down menu.
+- Navigate to the **Traefik Mesh Management** page on Meshery UI under `Lifecycle` menu with `default` in the Namespace field.
+- Select the `Image Hub Application` in the `Sample Application` drop down menu.
 
 ![Traefik Mesh Sample Apps](./assets/traefik-sample.png)
 

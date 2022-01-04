@@ -36,7 +36,7 @@
       "hideHiddenFiles": true,
       "exclusionPatterns": ["*test", "./test/*", "./logs"],
       "showdashboard": true,
-      "dashboards": [{"name": "Meshery Server", "port": 9081},{"name": "Image Hub", "port": 8080}],
+      "dashboards": [{"name": "Meshery UI", "port": 9081},{"name": "Image Hub", "port": 8080}],
       "uilayout": "terminal-iframe"
     },
 
