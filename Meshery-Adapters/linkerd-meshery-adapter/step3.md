@@ -52,7 +52,7 @@ If you cannot see the *Ready* column updated, this is because the deployment can
 
     `watch kubectl get po -n default`{{execute}} 
 
-Again if you cannot see the *Ready* column updated, this is because the deployment can take up upto a minute. When the deployment is complete, the page will auto-refresh. You can use `CTRL+ C` to switch back to the terminal.
+Again if you cannot see the *Ready* column updated, this is because the deployment can take up upto a minute. When the deployment is complete, the page will auto-refresh. You can use `CTRL+ C` or `CMD + C` to switch back to the terminal.
 
 2. View the details of the services:
 
