@@ -46,7 +46,7 @@ Sample Output:
 |   web    |  1/1  |      1     |     1     | 4m38s |
 
 ### Let's inspect our pod:
-If you cannot see the *Ready* column updated, this is because the deployment can take up upto a minute. When all the deployment are in ready state, you can use `CTRL+ C` to switch back to the terminal.
+If you cannot see the *Ready* column updated, this is because the deployment can take up upto a minute. When all the deployment are in ready state, you can use `CTRL + C` or `CMD + C` to switch back to the terminal.
 
 1. View the details of the deployed pods:
 
