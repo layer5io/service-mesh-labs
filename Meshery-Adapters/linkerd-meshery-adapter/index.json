@@ -37,11 +37,11 @@
     "hideHiddenFiles": true,
     "exclusionPatterns": ["*test", "./test/*", "./logs"],
     "showdashboard": true,
-    "dashboards": [{"name": "Meshery UI", "port": 9081},{"name": "Emojivoto", "port": 8080}],
+    "dashboards": [{"name": "Meshery UI", "port": 9081},{"name": "Emojivoto", "port": 80}],
     "uilayout": "terminal-iframe"
   },
 
   "backend": {
-    "imageid": "kubernetes-cluster-running:1.18"
+    "imageid": "kubernetes-cluster-running:1.22"
   }
 }

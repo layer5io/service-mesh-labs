@@ -73,7 +73,7 @@ The `emojivoto` sample application has now been onboarded on to your Linkerd ins
 
 `linkerd -n emojivoto check --proxy`{{execute}}
 
-The Emojivoto sample application should now be deployed at HTTP port:`8080`. Make your way to the `Linkerd-Emojivoto` Server tab. For this tutorial, the server is configured to be listening at `http://localhost:8080`
+The Emojivoto sample application should now be deployed at HTTP port:`80`. Make your way to the `Emojivoto` Server tab. For this tutorial, the server is configured to be listening at `http://localhost:80`
 
 **Note**: The Sample Application may take upto a minute to deploy. Please be patient
 
