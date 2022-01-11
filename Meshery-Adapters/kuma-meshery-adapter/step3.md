@@ -7,19 +7,11 @@ Sample Applications are deployed on top of a service mesh to help you explore an
 ## Deploy Image Hub on Kuma
 
 - Navigate to the **Kuma Management** page on Meshery with `default` in the Namespace field.
-- Select the `Image Hub application` in the `Sample Application` drop down menu.
+- Select the `Image Hub application` in the `Manage Sample Application Life` drop down menu.
 
-![Kuma Imagehub](./assets/kuma-sample-app.png)
+![Kuma Imagehub](./assets/install-image-hub.png)
 
 You will be notified of successful deployment.
-
-## Expose your Sample Application
-
-A sidecar injector is used for automating the injection of the Linkerd proxy into your application's pod spec. The Kubernetes admission controller enforces this behavior by sending a webhook request to the sidecar injector every time a pod is to be scheduled.
-
-You have already deployed the sidecar proxy injector when you installed Consul, which should be running in your control plane. To verify, execute this command:
-
-`kubectl get deployment consul-consul-connect-injector-webhook-deployment -n consul-system`{{execute}}
 
 **Let's verify that your deployment works. Run**:
 (The *Available* column might take upto a minute to get updated)
@@ -30,9 +22,8 @@ Sample Output:
 
 |        NAME       | READY | UP-TO-DATE | AVAILABLE | AGE |
 |:-----------------:|:-----:|:----------:|:---------:|:---:|
-| api-deployment-v1 |  1/1  |      1     |     1     | 88s |
-|       envoy       |  1/1  |      1     |     1     | 88s |
-|   web-deployment  |  1/1  |      1     |     1     | 88s |
+|       api-v1      |  1/1  |      1     |     1     | 88s |
+|       web-v1      |  1/1  |      1     |     1     | 88s |
 
 ### Let's inspect our pod:
 
@@ -50,10 +41,10 @@ If you cannot see the *Ready* column updated, this is because the deployment can
 
     `kubectl get svc -n default`{{execute}}
 
-    `kubectl describe svc/web-service -n default`{{execute}}
+    `kubectl describe svc/web -n default`{{execute}}
 
 4. Assess the application deployment by port-forwarding the web-service service:
 
-    `kubectl port-forward svc/web-service 8080 --address 0.0.0.0 -n default`{{Execute}}
+    `kubectl port-forward svc/web 8080 --address 0.0.0.0 -n default`{{Execute}}
 
 The Image Hub application should now be deployed on the HTTP port: `8080`. Make your way to the `ImageHub` Server tab. For this tutorial, the server is configured to be listening at `http://localhost:8080`
