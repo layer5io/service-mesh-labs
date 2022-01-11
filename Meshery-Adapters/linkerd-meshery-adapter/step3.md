@@ -23,13 +23,13 @@ Upon successful deployment, the output should look like:
 
 To deploy the Emojivoto application, follow these steps:
  
- - Using Meshery, navigate to the Linkerd management page.
+ - Using Meshery, navigate to the Linkerd management page from the Lifecycle menu.
  - Enter `default` in the Namespace field. This is the namespace in which we will be defining and deploying the Sample Application.
- - Click the (+) icon on the Sample Application card and select `Emojivoto Application` from the list.
+ - Click the (+) icon on the Manage Sample Application Lifecycle card and select `EmojiVoto Application` from the list.
 
  ![Emojivoto sample app](./assets/linkerd-sample-app.png)
 
- ![Emojivoto deployed](./assets/emojivoto-deployed.png)
+ ![Emojivoto deployed](./assets/emojivoto-dep.png)
 
 
 **Let's verify that your deployment works. Run**:
@@ -46,12 +46,13 @@ Sample Output:
 |   web    |  1/1  |      1     |     1     | 4m38s |
 
 ### Let's inspect our pod:
+If you cannot see the *Ready* column updated, this is because the deployment can take up upto a minute. When all the deployment are in ready state, you can use `CTRL+ C` to switch back to the terminal.
 
 1. View the details of the deployed pods:
 
     `watch kubectl get po -n default`{{execute}} 
 
-If you cannot see the *Ready* column updated, this is because the deployment can take up upto a minute. When the deployment is complete, the page will auto-refresh. You can use `CTRL+ C` to switch back to the terminal.
+Again if you cannot see the *Ready* column updated, this is because the deployment can take up upto a minute. When the deployment is complete, the page will auto-refresh. You can use `CTRL+ C` to switch back to the terminal.
 
 2. View the details of the services:
 
@@ -68,11 +69,11 @@ If you cannot see the *Ready* column updated, this is because the deployment can
     `kubectl port-forward svc/web-svc 80:80 --address 0.0.0.0 -n default`{{Execute}}
 
 **Success!**
-The `emojivoto` sample application has now been onboarded on to your Linkerd instance. As a final check, let's verify your data plane environment with this check:
+The `emojivoto` sample application has now been onboarded on to your Linkerd instance. This may take some time. As a final check, let's verify your data plane environment with this check:
 
 `linkerd -n emojivoto check --proxy`{{execute}}
 
-The Emojivoto sample application should now be deployed at HTTP port:`8080`. Make your way to the `Linkerd-Emojivoto` Server tab. For this tutorial, the server is configured to be listening at `http://localhost:8080`
+The Emojivoto sample application should now be deployed at HTTP port:`80`. Make your way to the `Emojivoto` Server tab. For this tutorial, the server is configured to be listening at `http://localhost:80`
 
 **Note**: The Sample Application may take upto a minute to deploy. Please be patient
 
