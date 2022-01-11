@@ -9,7 +9,7 @@ Sample Applications are deployed on top of a service mesh to help you explore an
 - Navigate to the **Kuma Management** page on Meshery with `default` in the Namespace field.
 - Select the `Image Hub application` in the `Manage Sample Application Life` drop down menu.
 
-![Kuma Imagehub](./assets/install image-hub.png)
+![Kuma Imagehub](./assets/install-image-hub.png)
 
 You will be notified of successful deployment.
 
