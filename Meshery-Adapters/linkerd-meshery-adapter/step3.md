@@ -1,4 +1,4 @@
-Let's deploy a sample application to run on Linkerd to get you better acquainted with the various feeatures of Linkerd and Meshery.
+Let's deploy a sample application to run on Linkerd to get you better acquainted with the various features of Linkerd and Meshery.
 
 ## Emojivoto 
 
