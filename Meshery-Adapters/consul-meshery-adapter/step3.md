@@ -13,7 +13,7 @@ You will be notified of successful deployment:
 
 ## Expose your Sample Application
 
-A sidecar injector is used for automating the injection of the Linkerd proxy into your application's pod spec. The Kubernetes admission controller enforces this behavior by sending a webhook request to the sidecar injector every time a pod is to be scheduled.
+A sidecar injector is used for automating the injection of the Consul proxy into your application's pod spec. The Kubernetes admission controller enforces this behavior by sending a webhook request to the sidecar injector every time a pod is to be scheduled.
 
 You have already deployed the sidecar proxy injector when you installed Consul, which should be running in your control plane. To verify, execute this command:
 

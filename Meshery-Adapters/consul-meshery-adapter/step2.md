@@ -1,6 +1,6 @@
 Consul can be manually installed on your Kubernetes cluster as well. Meshery offers a simple alternative way to do so. 
 
-## 1. Select `Consul` from the Management menu
+## 1. Select `Consul` from the Lifecycle menu
 
 ![Meshery adapter for Consul](./assets/consul-adapter.png)
 
@@ -11,7 +11,7 @@ Consul can be manually installed on your Kubernetes cluster as well. Meshery off
 
 ![Install Consul using Meshery](./assets/install-consul.png)
 
-To check if Istio is along with all the pieces that have been deployed, execute the following:
+To check if Consul is along with all the pieces that have been deployed, execute the following:
 
 `kubectl get all -n consul-system`{{execute}}
 
