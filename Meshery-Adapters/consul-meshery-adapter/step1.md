@@ -10,7 +10,7 @@ Meshery can be downloaded, installed, and launched with a single command:
 
 `curl -L https://git.io/meshery | ADAPTERS=consul PLATFORM=kubernetes bash -`{{execute}}
 
-**Congratulations!** You have successfully installed Meshery and the Meshery Adapter for Linkerd.
+**Congratulations!** You have successfully installed Meshery and the Meshery Adapter for Consul.
 
 Meshery is now available at host:`9081`.
 
