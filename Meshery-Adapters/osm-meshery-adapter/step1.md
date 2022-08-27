@@ -8,7 +8,7 @@ Once ready, you can deploy Meshery.
 
 Meshery can be downloaded, installed, and launched with a single command:
 
-`curl -L https://git.io/meshery | ADAPTERS=osm PLATFORM=kubernetes bash -`{{execute}}
+`curl -L https://meshery.io/install | ADAPTERS=osm PLATFORM=kubernetes bash -`{{execute}}
 
 **Congratulations!** You have successfully installed Meshery and the Meshery Adapter for Open Service Mesh.
 
