@@ -10,7 +10,7 @@ Meshery can be downloaded, installed, and launched with a single command:
 
 `curl -L https://meshery.io/install | ADAPTERS=istio PLATFORM=kubernetes bash -`{{execute}}
 
-**Congratulations!** You have successfully installed Meshery and the Meshery Adapter for Linkerd.
+**Congratulations!** You have successfully installed Meshery and the Meshery Adapter for Istio.
 
 Meshery is now available at host:`9081`.
 
